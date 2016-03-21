@@ -8,12 +8,12 @@ $(document).ready ->
     defaultView: 'month',
     height: 500,
     slotMinutes: 30,
-
+    eventLimit: true,
     eventSources: [{
       url: '/events',
     }],
 
-    timeFormat: 'h:mm t{ - h:mm t} ',
+    timeFormat: 'h:mm t',
     dragOpacity: "0.5"
 
     eventDrop: (event, dayDelta, minuteDelta, allDay, revertFunc) ->

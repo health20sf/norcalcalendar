@@ -1,3 +1,6 @@
-<h3>Bay Area's digital health event calendar.</h3>
-<%= link_to "new event", new_event_path %>
-<div id="calendar"></div>
+<div id="header">
+  <%=image_tag "calendar.png" %>
+  <h3>www.DigitalHealthEvents.org</h3>
+  <h5>One stop shop for all digital health events in the Bay Area.</h5>
+  <h5><%= link_to "View calendar", calendar_path %> | <a href="mailto:info@digitalhealthevents.org?subject=Submit event for consideration&body=Event title= _____, event time and date= _____, event location= _____, event description= _____, and event registration URL= _____">Submit event</a></h5>
+</div>
